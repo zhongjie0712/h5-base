@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+$bankColor: #00b893;
+$gray: #f5f5f5;
+
+:export {
+  bankColor: $bankColor;
+  gray: $gray;
+}

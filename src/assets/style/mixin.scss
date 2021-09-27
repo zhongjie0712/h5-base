@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// 超出省略
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin fl($data1, $data2, $data3: #333) {
+  font-size: $data1;
+  line-height: $data2;
+  color: $data3;
+}
+@mixin flex($data1, $data2) {
+  display: flex;
+  flex-direction: $data1;
+  justify-content: $data2;
+}
+
+@mixin bg($data1, $data2, $data3, $data4, $data5) {
+  $url: '@/assets/images/#{$data1}';
+  background: url($url) no-repeat $data2 $data3;
+  background-size: $data4 $data5;
+}
+@mixin position($ver1, $ver2, $data1, $data2, $type1: absolute) {
+  position: $type1;
+  #{$ver1}: $data1;
+  #{$ver2}: $data2;
+}
+@mixin placeholder($class) {
+  #{$class} input::-webkit-input-placeholder {
+    color: $tipscolor;
+  }
+}

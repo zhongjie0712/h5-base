@@ -1,0 +1,5 @@
+node_modules
+src/vant-weapp
+dist/
+test
+build/
